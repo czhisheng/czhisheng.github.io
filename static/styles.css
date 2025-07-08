@@ -14,6 +14,7 @@
 .skills > div {
     background-color: #aaf;
     color: #00d;
+    height: 100%;
     margin: 5px;
     padding: 5px 10px;
     border-radius: 10px;
@@ -26,16 +27,134 @@
     padding: 20px;
 }
 
-.name {
-    font-size: 92px;
-    font-weight: 400;
+.hint {
+    color: #66a;
+    font-size: .8rem;
+}
+
+@media (max-width: 577px) {
+    .name {
+        font-size: 74px;
+        font-weight: 400;
+        text-align: center;
+    }   
+}
+
+@media (min-width: 576px) {
+    .name {
+        font-size: 74px;
+        font-weight: 400;
+        text-align: center;
+    }   
+}
+
+@media (min-width: 768px) {
+    .name {
+        font-size: 104px;
+        font-weight: 400;
+        text-align: center;
+    }   
+}
+
+@media (min-width: 992px) {
+    .name {
+        font-size: 62px;
+        font-weight: 400;
+        text-align: start;
+    }   
+}
+
+@media (min-width: 1200px) {
+    .name {
+        font-size: 74px;
+        font-weight: 400;
+        text-align: start;
+    }   
+}
+
+@media (min-width: 1400px) {
+    .name {
+        font-size: 92px;
+        font-weight: 400;
+        text-align: start;
+    }   
 }
 
 .status {
+    white-space: nowrap;
     font-size: 11px;
     background-color: #eee;
     border: 1px solid #00f;
     color: #00f;
     border-radius: 25px;
     padding: 2px 5px;
+}
+
+.footer {
+    text-align: center;
+    padding-top: 6rem;
+    color: #777;
+    font-size: .8rem;
+}
+
+.timeline {
+    padding-left: 12px;
+}
+
+.event {
+    padding: 10px 5px 10px 0;
+    margin: 5px;
+}
+
+.event > div > h5 {
+    color: #11a;
+    margin-bottom: 0;
+}
+
+.event-info {
+    padding-left: 5px;
+    font-size: .9rem;
+}
+
+.date {
+    white-space: nowrap;
+    padding: 0 5px;
+    font-size: .8rem;
+    background-color: #e6e6ff;
+    border: 1px solid #99c;
+    border-radius: 15px;
+    align-self: center;
+}
+
+.active {
+    background-color: #c6f6c6 !important;
+    border: 1px solid #7c7 !important;
+}
+
+.company {
+    padding-left: 5px;
+    font-weight: 500;
+}
+
+.link {
+    text-decoration: none;
+    transition: 0.08s ease;
+    display: inline-block;
+}
+
+.link:hover {
+    font-weight: 500;
+    transform: scale(1.08);
+}
+
+.cert {
+    padding-left: 7px;
+    font-size: .85rem;
+    align-self: center;
+    text-decoration: none;
+}
+
+.cert:hover {
+    font-weight: 600;
+    padding-left: 5px;
 }

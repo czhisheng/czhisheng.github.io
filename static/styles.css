@@ -1,0 +1,41 @@
+.dp {
+    border-radius: 125px;
+}
+
+.sect {
+    padding-top: 4rem;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills > div {
+    background-color: #aaf;
+    color: #00d;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.skill-div {
+    min-width: 20%;
+    background-color: #e6e6ff;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.name {
+    font-size: 92px;
+    font-weight: 400;
+}
+
+.status {
+    font-size: 11px;
+    background-color: #eee;
+    border: 1px solid #00f;
+    color: #00f;
+    border-radius: 25px;
+    padding: 2px 5px;
+}

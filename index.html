@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     </head>
     <body data-bs-theme="light">
-        <nav class="navbar navbar-expand-lg sticky-top bg-white">
+        <nav class="navbar navbar-expand sticky-top bg-white">
             <div class="container-xxl">
                 <div>
                     <ul class="navbar-nav align-items-center fs-5">
@@ -21,12 +21,15 @@
                             <a href="https://github.com/czhisheng" class="nav-link"><i class="bi bi-github"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a href="mailto:chuazhisheng@hotmail.com">Email</a>
+                            <a class="nav-link" href="mailto:chuazhisheng@hotmail.com"><i class="bi bi-envelope-fill"></i></a>
                         </li>
                     </ul>
                 </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav ms-auto">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
                         <li class="nav-item">
                             <a href="#skills" class="nav-link">Skills</a>
                         </li>
@@ -36,13 +39,16 @@
                         <li class="nav-item">
                             <a href="#journey" class="nav-link">Journey</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link fs-5"><i class="bi bi-brightness-high"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <div class="container">
-            <div id="about" class="d-flex align-items-center sect">
-                <div>
+            <div id="about" class="d-flex align-items-center sect row">
+                <div class="col-md-12 col-lg-6">
                     <div class="name">Chua Zhisheng</div>
                     <div class="p-2 me-4">
                         <p>
@@ -52,12 +58,12 @@
                             I'm actively building a strong foundation in software development through self-directed learning and acedemic study, with growing interest in machine learning, web development and programming.
                         </p>
                         <p>
-                            I'm passionate, a fast learning and highly self-disciplined. This page is a reflection of my ongoing journey into tech.
+                            This page is a reflection of my ongoing journey into tech.
                         </p>
                     </div>
                 </div>
-                <div>
-                    <img src="static/dp_2.jpg" width="500" height="500" class="dp m-2">
+                <div class="col-md-12 col-lg-6 px-2">
+                    <img src="static/dp_2.jpg" class="dp img-fluid align-self-center">
                 </div>
             </div>
             <div id="skills" class="sect">
@@ -99,89 +105,126 @@
             </div>
             <div id="projects" class="sect">
                 <h2 class="p-2">Projects</h2>
-                <div class="d-flex gap-4">
-                    <div class="flex-fill skill-div">
+                <div class="d-flex gap-4 align-items-stretch">
+                    <div class="d-flex flex-column flex-fill skill-div pb-2">
                         <div class="d-flex align-items-center">
                             <h3>My Career Path</h3>
                             <div class="status ms-auto">CS50W capstone</div>
                         </div>
                         <div>A full-stack Django web app to search, save, and track job applications using the JSearch API.</div>
-                        <div class="pt-2">Please note that the webpage might take some time for loading.</div>
-                        <div class="d-flex align-items-center pt-2">
+                        <div class="d-flex align-items-center pt-4 mt-auto">
                             <div>
-                                <a href="https://github.com/czhisheng/cs50w-capstone.git">Source Code</a>
+                                <a href="https://github.com/czhisheng/cs50w-capstone.git" class="link">Source Code <i class="bi bi-git"></i></a>
                             </div>
                             <div class="ms-auto">
-                                <a href="https://my-career-path.onrender.com">Webpage</a>
+                                <a href="https://my-career-path.onrender.com" class="link">Webpage <i class="bi bi-box-arrow-in-up-right"></i></a>
                             </div>
                         </div>
+                        <div class="hint ms-auto">* Webpage might take some time to load.</div>
                     </div>
-                    <div class="flex-fill skill-div">
+                    <div class="d-flex flex-column flex-fill skill-div pb-2">
                         <div class="d-flex align-items-center">
                             <h3>Infinity Tic-Tac-Toe</h3>
                             <div class="status ms-auto">CS50x final project</div>
                         </div>
                         <div>A Flask-based take on the classic game, featuring scalable grid sizes and three AI difficulty levels. My first end-to-end project.</div>
-                        <div class="pt-2">Please note that the webpage might take some time for loading.</div>
-                        <div class="d-flex align-items-center pt-2">
+                        <div class="d-flex align-items-center pt-4 mt-auto">
                             <div>
-                                <a href="https://github.com/czhisheng/cs50x-final-project.git">Source Code</a>
+                                <a href="https://github.com/czhisheng/cs50x-final-project.git" class="link">Source Code <i class="bi bi-git"></i></a>
                             </div>
                             <div class="ms-auto">
-                                <a href="https://tik-tac-toe-8ssa.onrender.com">Webpage</a>
+                                <a href="https://tik-tac-toe-8ssa.onrender.com" class="link">Webpage <i class="bi bi-box-arrow-in-up-right"></i></a>
                             </div>
                         </div>
+                        <div class="hint ms-auto">* Webpage might take some time to load.</div>
                     </div>
                 </div>
             </div>
             <div id="journey" class="sect">
                 <h2 class="p-2">Journey</h2>
-                <div class="d-flex w-100">
-                    <div class="flex-fill w-50">
+                <div class="d-flex w-100 p-2">
+                    <div class="flex-fill w-50 pe-5">
                         <h4>Education</h4>
                         <ul class="timeline">
                             <li class="event">
-                                <h5>BTech in Computing</h5>
-                                <div>Nanyang Technological University</div>
-                                <div>
-                                    Persuing a part-time 4 year Bachelor of Technology in Computing at NTU. Program held on weekends.
+                                <div class="d-flex">
+                                    <h5>BTech in Computing</h5>
+                                    <div class="date ms-auto active">Ongoing</div>
+                                </div>
+                                <div class="company">Nanyang Technological University</div>
+                                <div class="event-info">
+                                    Persuing a part-time 4 year Bachelor of Technology in Computing at NTU. Program held on weekends, completing in 2029.
                                 </div>
                             </li>
                             <li class="event">
-                                <h5>CS50W</h5>
-                                <div>Harvard University</div>
-                                <div>
+                                <div class="d-flex">
+                                    <h5>CS50W</h5>
+                                    <a class="cert" href="https://cs50.harvard.edu/certificates/62699e40-894a-4b2c-be01-26d7b3f9f299">
+                                        Certificate<i class="bi bi-box-arrow-in-up-right"></i>
+                                    </a>
+                                    <div class="date ms-auto">Jun - Jul 2025</div>
+                                </div>
+                                <div class="company">Harvard University</div>
+                                <div class="event-info">
                                     A full stack web development course covering both front-end and back-end using Django, JavaScript, HTML/CSS, SQL and Git. Projects emphasize user authentication, database design, APIs, and interactive UI development.
                                 </div>
                             </li>
                             <li class="event">
-                                <h5>CS50AI</h5>
-                                <div>Harvard University</div>
-                                <div>
+                                <div class="d-flex">
+                                    <h5>CS50AI</h5>
+                                    <a class="cert" href="https://cs50.harvard.edu/certificates/62699e40-894a-4b2c-be01-26d7b3f9f299">
+                                        Certificate<i class="bi bi-box-arrow-in-up-right"></i>
+                                    </a>
+                                    <div class="date ms-auto">May - Jun 2025</div>
+                                </div>
+                                <div class="company">Harvard University</div>
+                                <div class="event-info">
                                     An intensive 7-week course on foundation AI concepts. Topics include search algorithms, knowledge representation, machine learning, neural networks,
                                     and natural language processing using Python. Completed 12 hands-on projects using tools such as scikit-learn, TensorFlow, OpenCV, and NLTK.
                                 </div>
                             </li>
                             <li class="event">
-                                <h5>CS50P</h5>
-                                <div>Harvard University</div>
-                                <div>
+                                <div class="d-flex">
+                                    <h5>CS50P</h5>
+                                    <a class="cert" href="https://cs50.harvard.edu/certificates/8d2b6ca0-85d4-4f3f-b591-bbb3d35a2f84">
+                                        Certificate<i class="bi bi-box-arrow-in-up-right"></i>
+                                    </a>
+                                    <div class="date ms-auto">Apr - May 2025</div>
+                                </div>
+                                <div class="company">Harvard University</div>
+                                <div class="event-info">
                                     Strengthend Python programming skills, focuses on core programming concepts, object-oriented programming, file I/O, libraries, unit testing and regular expression.
                             </li>
                             <li class="event">
-                                <h5>CS50x</h5>
-                                <div>Harvard University</div>
-                                <div>
+                                <div class="d-flex">
+                                    <h5>CS50x</h5>
+                                    <a class="cert" href="https://cs50.harvard.edu/certificates/40dbcbef-dab9-4aff-ba68-6f0738a07a45">
+                                        Certificate<i class="bi bi-box-arrow-in-up-right"></i>
+                                    </a>
+                                    <div class="date ms-auto">Feb - Apr 2025</div>
+                                </div>
+                                <div class="company">Harvard University</div>
+                                <div class="event-info">
                                     Completed Harvard's flagship introduction to computer science. Covers 12 weeks of content including C, Python, SQL, HTML/CSS, JavaScript and Flask.
                                 </div>
                             </li>
                             <li class="event">
-                                <h5>Bridging Modules</h5>
-                                <div>Nanyang Technological University</div>
-                                <div>
+                                <div class="d-flex">
+                                    <h5>Bridging Modules</h5>
+                                    <div class="date ms-auto">Aug - Nov 2024</div>
+                                </div>
+                                <div class="company">Nanyang Technological University</div>
+                                <div class="event-info">
                                     Completed 5 foundational modules as part of NTU's B-tech in Computing. Gained fundamental knowledge in computational thinking and programming,
                                     basic computer systems and mathematics useful for application in various computing related disciplines.
                                 </div>
+                            </li>
+                            <li class="event">
+                                <div class="d-flex">
+                                    <h5>Diploma in Digital Visual Effects</h5>
+                                    <div class="date ms-auto">Mar 2011 - Mar 2014</div>
+                                </div>
+                                <div class="company">Nanyang Polytechnic</div>
                             </li>
                         </div>
                     </ul>
@@ -189,17 +232,32 @@
                         <h4>Career</h4>
                         <ul class="timeline">
                             <li class="event">
-                                <h5>Senior Lighting and Compositing Artist</h5>
-                                <div>Giant Animation</div>
-                                <div>
-                                    Persuing a part-time 4 year Bachelor of Technology in Computing at NTU. Program held on weekends.
+                                <div class="d-flex">
+                                    <h5>Senior Lighting and Compositing Artist</h5>
+                                    <div class="date ms-auto">Sep - Jan 2025</div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="company">Giant Animation, Ireland</div>
+                                    <div class="date ms-auto">Jul 2023 - Feb 2024</div>
+                                </div>
+                                <div class="event-info">
+                                    Crafted cinematic lighting and composition to align with the art director's vision, 
+                                    ensuring visual consistency across sequences. Provided both technical and artistic support to junior artists, 
+                                    improving overall shot quality. Developed reusable lighting templates to streamline the pipeline, 
+                                    and managed high-complexity sequences under tight deadlines, often resolving critical last-minute issues.
                                 </div>
                             </li>
                             <li class="event">
-                                <h5>Lighting Lead</h5>
-                                <div>Tiny Island Productions</div>
-                                <div>
-                                    A full stack web development course covering both front-end and back-end using Django, JavaScript, HTML/CSS, SQL and Git. Projects emphasize user authentication, database design, APIs, and interactive UI development.
+                                <div class="d-flex">
+                                    <h5>Lighting Lead</h5>
+                                    <div class="date ms-auto">Aug 2017 - Jun 2023</div>
+                                </div>
+                                <div class="company">Tiny Island Productions, Singapore</div>
+                                <div class="event-info">
+                                    Contributed to multiple animated films and series, delivering high-quality lighting and VFX. 
+                                    Promoted to Lighting Lead, coordinating with producers and supervisors to manage schedules, task planning, 
+                                    and timely delivery. Played a key role in maintaining artistic standards through shot reviews and quality checks. 
+                                    Supported the team with technical troubleshooting, pipeline improvements, and onboarding junior artists through training and documentation.
                                 </div>
                             </li>
                         </ul>
@@ -208,7 +266,8 @@
             </div>
         </div>
     </body>
-    <footer>
-        Implemented by Chua Zhisheng.
+    <footer class="footer">
+        <p><i class="bi bi-c-circle"></i> 2025 Chua Zhisheng. Built with HTML, CSS, and JavaScript.</p>
     </footer>
+    <script src="static/index.js"></script>
 </html>

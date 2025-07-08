@@ -11,11 +11,11 @@
     </head>
     <body data-bs-theme="light">
         <nav class="navbar navbar-expand sticky-top bg-white">
-            <div class="container-xxl">
+            <div class="container-xxl custom-font">
                 <div>
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="bi bi-house-fill"></i></a>
+                            <a class="nav-link" href="#"><i class="bi bi-house-door-fill"></i></a>
                         </li>
                         <li class="nav-item">
                             <a href="https://www.linkedin.com/in/zhisheng-chua-0ab444164" class="nav-link"><i class="bi bi-linkedin "></i></a>
@@ -28,10 +28,7 @@
                         </li>
                     </ul>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div>
                     <ul class="navbar-nav ms-auto align-items-center">
                         <li class="nav-item">
                             <a href="#skills" class="nav-link">Skills</a>
@@ -52,7 +49,12 @@
         <div class="container">
             <div id="about" class="d-flex align-items-center sect row">
                 <div class="col-md-12 col-lg-7">
-                    <div class="name custom-text-align">Chua Zhisheng</div>
+                    <div class="row custom-mb">
+                        <div class="name custom-text-align align-self-end col-9 col-lg-12">Chua Zhisheng</div>
+                        <div class="d-block d-lg-none col-3 pe-5">
+                            <img src="static/dp_2.jpg" class="dp img-fluid">
+                        </div>
+                    </div>
                     <div class="custom-text-align p-2">
                         <p>
                             Hello! I come from the CG industry, now exploring the world of technology and computer science.
@@ -66,7 +68,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-5 px-2">
-                    <img src="static/dp_2.jpg" class="dp img-fluid align-self-center">
+                    <img src="static/dp_2.jpg" class="dp img-fluid align-self-center d-none d-lg-block">
                 </div>
             </div>
             <div id="skills" class="sect">

@@ -34,21 +34,21 @@
 
 @media (max-width: 575px) {
     .name {
-        font-size: 72px;
+        font-size: 52px;
         font-weight: 400;
     }   
 }
 
 @media (min-width: 576px) {
     .name {
-        font-size: 74px;
+        font-size: 52px;
         font-weight: 400;
     }   
 }
 
 @media (min-width: 768px) {
     .name {
-        font-size: 86px;
+        font-size: 64px;
         font-weight: 400;
     } 
 }
@@ -67,13 +67,20 @@
     .custom-text-align {
         text-align: center;
     }
+
+    .custom-font {
+        font-size: .92rem;
+    }
+
+    .custom-mb {
+        margin-bottom: 1rem;
+    }
 }
 
 @media (min-width: 992px) {
     .name {
         font-size: 64px;
         font-weight: 400;
-        text-align: start;
     }   
 
     .custom-flex {
@@ -86,6 +93,14 @@
 
     .custom-text-align {
         text-align: start;
+    }
+    
+    .custom-font {
+        font-size: 1rem;
+    }
+    
+    .custom-mb {
+        margin-bottom: 0;
     }
 }
 
@@ -115,7 +130,7 @@
 
 .footer {
     text-align: center;
-    padding-top: 6rem;
+    padding-top: 4rem;
     color: #777;
     font-size: .8rem;
 }

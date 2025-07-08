@@ -12,7 +12,7 @@
 }
 
 .skills > div {
-    background-color: #aaf;
+    background-color: #99fb;
     color: #00d;
     height: 100%;
     margin: 5px;
@@ -22,7 +22,7 @@
 
 .skill-div {
     min-width: 20%;
-    background-color: #e6e6ff;
+    background-color: #8686ff44;
     border-radius: 15px;
     padding: 20px;
 }
@@ -121,9 +121,10 @@
 .status {
     white-space: nowrap;
     font-size: 11px;
-    background-color: #eee;
+    background-color: #99fb;
     border: 1px solid #00f;
     color: #00f;
+    font-weight: 500;
     border-radius: 25px;
     padding: 2px 5px;
 }
@@ -144,29 +145,36 @@
     margin: 5px;
 }
 
-.event > div > h5 {
-    color: #11a;
+body[data-bs-theme="light"] .event > div > h5 {
+    color: #24a;
     margin-bottom: 0;
+}
+body[data-bs-theme="dark"] .event > div > h5 {
+    color: #99f;
+    margin-bottom: 0;
+}
+
+body[data-bs-theme="light"] .mode-bg-color {
+    background-color: white;
+}
+body[data-bs-theme="dark"] .mode-bg-color {
+    background-color: #212529;
 }
 
 .event-info {
     padding-left: 5px;
     font-size: .9rem;
+    opacity: 83%;
 }
 
 .date {
     white-space: nowrap;
     padding: 0 5px;
     font-size: .8rem;
-    background-color: #e6e6ff;
-    border: 1px solid #99c;
+    background-color: #66f4;
+    border: 1px solid #99c7;
     border-radius: 15px;
     align-self: center;
-}
-
-.active {
-    background-color: #c6f6c6 !important;
-    border: 1px solid #7c7 !important;
 }
 
 .company {
@@ -195,4 +203,23 @@
 .cert:hover {
     font-weight: 600;
     padding-left: 5px;
+}
+
+.active {
+    animation-name: blinking;
+    animation-duration: 2.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    border: 1px solid #3a37 !important;
+}
+
+@keyframes blinking {
+    0%, 100% {
+        background-color: #3f35;
+        box-shadow: none;
+    }
+    50% {
+        background-color: #3f6b;
+        box-shadow: 0 0 18px #3f35;
+    }
 }

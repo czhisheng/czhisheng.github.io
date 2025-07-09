@@ -1,5 +1,5 @@
 .dp {
-    border-radius: 125px;
+    border-radius: 100px;
 }
 
 .sect {
@@ -48,7 +48,7 @@
 
 @media (min-width: 768px) {
     .name {
-        font-size: 64px;
+        font-size: 68px;
         font-weight: 400;
     } 
 }
@@ -74,6 +74,11 @@
 
     .custom-mb {
         margin-bottom: 1rem;
+    }
+
+    .custom-mx {
+        margin-left: 1.75rem !important;
+        margin-right: 1.75rem !important;
     }
 }
 
@@ -101,6 +106,11 @@
     
     .custom-mb {
         margin-bottom: 0;
+    }
+
+    .custom-mx {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
@@ -133,7 +143,7 @@
     text-align: center;
     padding-top: 4rem;
     color: #777;
-    font-size: .8rem;
+    font-size: .7rem;
 }
 
 .timeline {

@@ -28,7 +28,7 @@
 }
 
 .hint {
-    color: #66a;
+    color: #77a;
     font-size: .8rem;
 }
 
@@ -164,7 +164,7 @@ body[data-bs-theme="dark"] .mode-bg-color {
 .event-info {
     padding-left: 5px;
     font-size: .9rem;
-    opacity: 83%;
+    opacity: 75%;
 }
 
 .date {
